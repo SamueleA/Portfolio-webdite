@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<body>
+  <h1><span class="red">Ripe</span> Pomodoro</h1>
+  <p class= "description">Start your session and the tomato will redden as time goes on. Never heard of the pomodoro technique? <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">I got you covered!</a></p>
+  <button class = "volume">Test Volume</button>
+  <div class="numberCounter">
+    <h3 class="header">start/stop</h3>
+    <div class="counter"><span class="digit">0</span></div>
+    <div class="buttonContainer"><div class="button plus"><span class="center">+</span></div></div>
+    <div class="buttonContainer"><div class="button minus"><span class="center">-</span></div></div>
+  </div>
+  
+  
+  <div class="drawingContainer">
+    <div class="drawing">
+      <div class="stemLeaf">
+        <div class="stem"></div>
+        <div class="leaf1"></div>
+        <div class="leaf2"></div>
+        <div class="leaf3"></div>
+      </div>
+      <div class="tomato">
+        <div class="stemBase"></div>
+      </div>
+      <div class="shadow-tomato"></div>
+      <div class="shadow-stem"></div>
+    </div>
+  </div>
+  <audio id = "sound" src="http://wolo-usa.com/siren1.wav"></audio>
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

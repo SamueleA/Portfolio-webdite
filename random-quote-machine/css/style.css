@@ -1,0 +1,121 @@
+body {
+  
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  margin: auto;
+
+}
+*:focus {
+    outline: none;
+}
+
+* {
+  transition: background-color 2s;
+}
+
+
+h1 {
+  color: white; 
+  text-align: center;
+  font-family: 'Coming Soon', cursive;
+  
+}
+.content-box {
+  background-color: white; 
+  border-radius: 5px;
+  padding: 50px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.fa-quote-left {
+  color: #333;
+  margin-right: 5px ;
+  position: relative;
+  top: -40px;
+  heigth: 100%;
+  transition: color 2s;
+  
+
+  
+  
+}
+
+#quote {
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  display: inline;
+  font-size: 1.3em;
+  font-weight: 700;
+  transition: color 2s;
+  
+  
+
+}
+
+#quote-author {
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  float: right;
+  clear: left;
+  transition: color 2s;
+
+
+}
+
+
+
+button {
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  top: 20px;
+  height: 45px;
+  min-width: 45px;
+  font-size: 1.05em;
+  font-weight: 500;
+  cursor: pointer;
+
+}
+
+button:hover {
+
+}
+
+button:nth-of-type(2) {
+  float:right;
+}
+
+buttontwitter {
+  display: inline-block;
+  float: right;
+}
+
+.name {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+
+}

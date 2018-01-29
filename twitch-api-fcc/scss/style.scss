@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css?family=Archivo|Open+Sans');
+
+
+$bg-color: #9b9788;  
+$card-color: #4a6d47;
+$online-color: #4ac100;
+$offline-color: #e00b0b;  
+$outerled-color: #636363; 
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-color;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px auto;
+  font-family: 'Archivo', sans-serif;
+
+}
+
+.leds {
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.led-tag {
+  flex: 0 0 auto;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: 'Open Sans', sans-serif;
+
+  
+}
+.select {
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  box-shadow: inset -1px 1px 10px #fff;
+  background-color: $outerled-color;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  &:before {
+    display: inline-block;
+    content: "";
+    background-color: #44423b;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    box-shadow: inset -1px 1px 10px white;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+  }
+}
+
+.active, .select:hover{
+  &:before {
+  background-color: $online-color;  
+  box-shadow: 0px 0px 15px $online-color;
+  cursor: pointer;
+  }
+}
+
+.card {
+  text-decoration: none;
+  display: flex;
+  flex-flow: row nowrap;
+  clear: both;
+  background-color: $card-color;
+  margin: 10px auto;
+  heigth: 90px;
+  max-width: 600px;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: inset 0 0 0 5px black;
+  background-color: #d3cba7;
+}
+
+
+.thumbnail {
+  margin: 10px;
+  height: 70px;
+}
+
+.description {
+  overflow: hidden;
+  max-height: 70px;
+  flex-grow: 1000;
+  margin: auto 0;
+  color: black;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.status{
+  flex-shrink: 0;
+  background-color: $outerled-color ;
+  margin: 10px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  box-shadow: inset -1px 1px 10px white;
+  margin: auto 10px;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  &:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height:14px;
+    width: 14px;
+    top: 3px;
+    left: 3px;
+    background-color:$online-color;
+    border-radius: 50%;
+    box-shadow: inset -1px 1px 8px white;
+  }
+}
+  @mixin led ($color){
+    background-color: $color;
+    box-shadow: 0px 0px 15px $color ;
+  }
+  
+  #online .status:before {
+    @include led($online-color);
+  }  
+  #offline .status:before {
+    @include led($offline-color);
+  }  
+  
+footer {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin: 20px 0;
+}

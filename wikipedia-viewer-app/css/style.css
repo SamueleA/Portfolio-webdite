@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;  
+}
+
+
+.search-bar {
+  text-align: center;
+  
+}
+  
+input {
+  vertical-align: middle;
+  font-size: 15px;
+  height: 35px;  
+  border: none;
+  padding: 2px;
+  padding-left: 10px;
+  box-shadow: inset 0 0 0 1px #cbd1db;
+  width: 33%;
+  min-width: 200px;
+  
+  
+}
+
+input:focus { 
+  border: none;  
+  outline: none;
+  box-shadow: inset 0 0 0 3px #4285f4;
+}
+
+.buttons {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
+.search-icon {
+  font-size: 20px;
+  vertical-align: middle;
+  margin: 3px;
+}
+
+#search-button {
+  vertical-align: middle;
+  height: 35px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: none;
+  background-color: #4285f4;
+  color: white;
+}
+
+
+#random-article {
+  vertical-align: middle;
+  height: 35px;
+  border: none;
+  background-color: #4285f4;
+  color: white;
+  font-size: 15px;
+}
+
+button#search-button:hover, button#random-article:hover {
+  cursor: pointer; 
+  background-color: #3674d8; 
+}
+
+#logo {
+  width: 50%;
+  max-width: 300px;
+  display: block;
+  margin: 30px auto;
+  margin-top: 50px;
+}
+
+.searchmatch{
+  font-weight: bold;
+
+}
+
+#data {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 10px;
+}
+
+a{
+  text-decoration:none;
+  color: black;
+}
+
+
+.card {
+  text-align: left;
+  display: block;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #e8e9ea;
+  max-width: 700px;
+
+}
+
+.card:hover {
+  background-color: #c8cbce;
+}
+
+.cardTitle {
+  font-size: 20px;  
+}
+
+.cardText {
+  font-size: 16px;
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+footer {
+
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+

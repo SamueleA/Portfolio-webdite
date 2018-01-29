@@ -1,0 +1,289 @@
+/*Pallette
+  Dark green: #313715
+  Red: #D13414
+  Medium green: #939F5C
+  Light green: #BBCE8A
+  Pale green: #E2F9B8
+  To visualize:
+  https://coolors.co/313715-d13414-939f5c-bbce8a-e2f9b8
+
+Alternative...Make a pumpkin theme
+https://coolors.co/313715-d17314-939f5c-bbce8a-e2f9b8
+*/
+@import url('https://fonts.googleapis.com/css?family=Baloo|Roboto');
+
+* {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  background-color: #BBCE8A;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Baloo', cursive;
+  font-size: 4em;
+  color: #313715;
+}
+
+.description {
+  margin: 0px 25px;
+  margin-bottom: 125px;
+}
+
+.red {
+  color: #D13414;
+}
+
+p{
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+
+}
+
+.volume {
+  display: block;
+  width: 105px;
+  height:30px;
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color:#eee;
+  border: 2px solid #313715;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  transition: 0.3s;
+  font-weight: 700;
+}
+.volume:hover {
+  font-size: 0.9em;
+}
+
+.volume:active {
+  background-color: #c5d9f9;
+  transition: all 0s ease;
+}
+.numberCounter {
+  background-color: white;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: -50px;
+  background-color: rgba(0, 0, 0, 0);
+
+}
+
+h3.header {
+  padding-top: 10px;
+  height: 30px;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  /*background-color: #E2F9B8;*/
+  background-color: #eee;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: solid 2px #313715;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: solid 2px #313715;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.05em;
+  transition: all 0.3s ease;
+}
+
+.header:hover {
+  font-size: 1.17em;
+}
+
+.header:active {
+  background-color: #c5d9f9;
+  transition: all 0s ease;
+
+}
+
+.counter {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  background-color: #E2F9B8;
+  cursor: default;
+  user-select: none;
+  margin-bottom: -8px;
+  border-left: solid 2px #313715;
+  border-right: solid 2px #313715;
+  border-bottom: solid 2px #313715;
+}
+
+.digit {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.buttonContainer  {
+  width: 30px;
+  height: 30px;
+}
+
+.buttonContainer > .minus {
+   top: -82px;
+   left: -15px;
+}
+
+.buttonContainer > .plus {
+  left: 89px;
+  top: -52px;
+}
+
+.button  {
+  position: relative;
+  text-align: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #eee;
+  user-select: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: 1000;
+  border: 2px solid #313715;
+  transition: all 0.3s ease;
+}
+
+.button:active {
+  background-color: #c5d9f9;
+  transition: all 0s ease;
+
+}
+
+.minus:hover {
+  width: 30px;
+  height: 30px;
+  font-size: 1.75em;
+  top: -84px;
+  left: -17px;
+}
+
+.plus:hover {
+  width: 30px;
+  height: 30px;
+  font-size: 1.75em;
+  left: 91px;
+  top: -54px;
+}
+
+.center {
+  position: relative;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.plus {
+  margin-bottom: -25px;
+  color: #D13414;
+  float: right;
+}
+
+.minus {
+  margin-bottom: -25px;
+  left: -15px;
+  top: -52px;
+  color: #313715;
+}
+
+.minus > span {
+    top: 45%;
+}
+
+.plus > span {
+      
+}
+
+.drawingContainer {
+  display: flex; 
+}
+
+.drawing {
+  margin: 0 auto;
+  margin-top: -290px;
+  z-index: -1;
+}
+
+.tomato {
+  background-color: #939F5C;
+  height: 300px;
+  width:300px;
+  -webkit-clip-path: ellipse(46% 42% at 50% 50%);
+  clip-path: ellipse(46% 42% at 50% 50%);
+  transition: 1s;
+  margin-top: -10px;
+  z-index: 4;
+}
+
+.shadow-tomato {
+  z-index: 4;
+  position: relative;
+  top: -300px;
+  left: 0px;
+  width: 300px;
+  height: 300px;
+  -webkit-clip-path: ellipse(46% 42% at 50% 50%);
+  clip-path: ellipse(46% 42% at 50% 50%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .7));
+  margin-bottom: -400px;
+}
+
+.shadow-stem { 
+  position: relative;
+  top: -200px;
+  right:-125px;
+  height: 100px;
+  width: 100px;
+  -webkit-clip-path: polygon(54% 10%, 3% 100%, 67% 11%);
+  clip-path: polygon(54% 10%, 3% 100%, 67% 11%);
+  z-index:-1;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5));
+}
+
+
+.changeColorToRed {
+  background-color: #D13414;
+}
+
+.stemLeaf{
+ 
+}
+.stem {
+  position: relative;
+  top: 90px;
+  right:-125px;
+  background-color:#313715;
+  height: 100px;
+  width: 100px;
+  -webkit-clip-path: polygon(54% 10%, 3% 100%, 67% 11%);
+  clip-path: polygon(54% 10%, 3% 100%, 67% 11%);
+  z-index:-2;
+}
+
+.stemBase {
+  position: relative;
+  top: -50px;
+  right:-50px;
+  background-color:#313715;
+  height: 200px;
+  width: 200px;
+  -webkit-clip-path: polygon(68% 29%, 74% 34%, 95% 67%, 67% 56%, 79% 91%, 50% 70%, 6% 95%, 24% 64%, 0 63%, 20% 36%);
+  clip-path: polygon(68% 29%, 74% 34%, 95% 67%, 67% 56%, 79% 91%, 50% 70%, 6% 95%, 24% 64%, 0 63%, 20% 36%);  
+}

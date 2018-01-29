@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  text-align: center;
+  font: 1.15em/1 "Open-Sans", sans-serif;
+  background:#FFF;
+}
+
+.wrapper {
+  background-color: #F5F5F5;
+  padding-bottom: 50px
+}
+
+
+.crop-container {
+
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.crop-container img {
+  margin: 0 auto;
+}
+
+.homeImage {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+h1 {
+  font-size: 2em;
+  padding: 15px 10px 35px 10px;
+
+}
+
+h1.my-name {
+  border-bottom: 2px solid #5F5F5F;
+  padding: 30px 10px 50px 10px;
+
+}
+
+.contactMe {
+    margin-top: 25px;
+}
+
+.html-css-js {
+  padding: 0 25px;
+}
+
+p {
+  margin: 0 15px;
+}
+
+.description {
+  padding-right: 25px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+
+.contact-description {
+    margin-bottom: 50px;
+}
+
+.portfolio-img {
+  padding: 20px;
+}
+
+
+@media screen and (min-width: 700px) {
+  .row {
+    display: flex;
+    margin:0px;
+  }
+  [name*=col-]:last-child {
+    margin:0;
+  }
+  .col-1 {flex:1;}
+  .col-2 {flex:2;}
+  .col-3 {flex:3;}
+  .col-4 {flex:4;}
+  .col-5 {flex:5;}
+  .col-6 {flex:6;}
+  .col-7 {flex:7;}
+  .col-8 {flex:8;}
+  .col-9 {flex:9;}
+  .col-10 {flex:10;}
+  .col-11 {flex:11;}
+  .col-12 {flex:12;}
+
+  .description {
+      text-align: left;
+  }
+
+  .portfolio-img {
+    /*padding: 50px*/
+  }
+  .flexWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .flexCard {
+    flex-basis: 350px;
+  }
+
+}
